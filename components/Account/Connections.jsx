@@ -43,31 +43,7 @@ export default function Main({ $, user }) {
         : null,
       connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitter/login",
       logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitter/logout",
-    },
-    {
-      id: "tiktok",
-      border: "border-purple-600/20",
-      bg: "bg-purple-500/20",
-      provider: "Tiktok",
-      icon: <i className="fab fa-tiktok text-white fa-2x mr-2" />,
-      userCheck: user.connections["tiktok"]
-        ? user.connections["tiktok"]
-        : null,
-      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/tiktok/login",
-      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/tiktok/logout",
-    },
-      {
-      id: "telegram",
-      border: "border-blue-500/20",
-      bg: "bg-blue-400/20",
-      provider: "Telegram",
-      icon: <i className="fab fa-telegram text-white fa-2x mr-2" />,
-      userCheck: user.connections["telegram"]
-        ? user.connections["telegram"]
-        : null,
-      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/telegram/login",
-      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/telegram/logout",
-    },
+    }
   ];
   return (
     <div>
