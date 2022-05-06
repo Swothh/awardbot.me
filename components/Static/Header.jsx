@@ -209,7 +209,7 @@ const Header = ({ $, NavItems }) => {
                                 width="48" height="48"
                             />
                             <p className="invisible md:visible text-xl text-white font-semibold">
-                                <span className="text-amber-400">Gift</span>ix
+                                <span className="text-amber-400">Award</span>Bot
                             </p>
                         </div>
                         <ul className="hidden lg:flex items-center space-x-4">
