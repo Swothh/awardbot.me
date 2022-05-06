@@ -38,7 +38,7 @@ module.exports = {
         }
       },
     },
-    developedWith: 'Serity tarafından ❤️ ile geliştirildi.',
+    developedWith: 'clqu & Swôth tarafından ❤️ ile geliştirildi.',
     allServices: 'Tüm hizmetler çalışıyor.',
     someServices: 'Bazı hizmetler çalışmıyor.'
   },
