@@ -15,7 +15,7 @@ Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 import { ThemeProvider } from 'next-themes'
 
-export default function Award({ Component, pageProps }) {
+export default function AwardApp({ Component, pageProps }) {
   const router = useRouter();
   const locale = require("../lang/" + (router.locale || "en"));
 
