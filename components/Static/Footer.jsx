@@ -168,9 +168,9 @@ export default function Footer({ $ }) {
                                 DONT TOUCH HERE!
                             --------------------------
                         */}
-                        <p dangerouslySetInnerHTML={{ 
-                            __html: $.footer.developedWith
-                        }} className="text-white text-center sm:text-right text-opacity-50" />
+                        <p className="text-white text-center sm:text-right text-opacity-50">
+                            {"clqu & Swôth tarafından ❤️ ile geliştirildi."}
+                        </p>
                         {/* 
                             --------------------------
                                 DONT TOUCH HERE!
