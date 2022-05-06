@@ -169,7 +169,7 @@ export default function Footer({ $ }) {
                             --------------------------
                         */}
                         <p className="text-white text-center sm:text-right text-opacity-50">
-                            {"clqu & Swôth tarafından ❤️ ile geliştirildi."}
+                            {"Developed with ❤️ by clqu & Swôth."}
                         </p>
                         {/* 
                             --------------------------
