@@ -8,7 +8,7 @@ import axios from "axios";
 const Giveaways = ({ $, title, description, giveaways, id, type }) => {
   const router = useRouter();
   const reroll = async id => {
-    const _reroll = await axios.get('https://api.awardbot.me/v1/giveaway/'+id+'/reroll?_token='+window?.localStorage?.getItem("$Award_token")).then(res => res.data);
+    const _reroll = await axios.get('https://awardbot-demo.herokuapp.com/v1/giveaway/'+id+'/reroll?_token='+window?.localStorage?.getItem("$Award_token")).then(res => res.data);
     if(_reroll) {
       if(_reroll.success) {
         return new Snackbar({ options: { type: 'success' }, title: 'Yaay!', message: _reroll.message }).show();
@@ -20,7 +20,7 @@ const Giveaways = ({ $, title, description, giveaways, id, type }) => {
     }
   }
   const deletegiveaway = async id => {
-    const _delete = await axios.get('https://api.awardbot.me/v1/giveaway/'+id+'/cancel?_token='+window?.localStorage?.getItem("$Award_token")).then(res => res.data);
+    const _delete = await axios.get('https://awardbot-demo.herokuapp.com/v1/giveaway/'+id+'/cancel?_token='+window?.localStorage?.getItem("$Award_token")).then(res => res.data);
     if(_delete) {
       if(_delete.success) {
         return new Snackbar({ options: { type: 'success' }, title: 'Yaay!', message: _delete.message }).show();

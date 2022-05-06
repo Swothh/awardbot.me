@@ -11,7 +11,7 @@ import axios from 'axios';
 export default function Footer({ $ }) {
     const [ apiAlive, setApiAlive ] = useState(null);
 
-    axios.get("https://api.awardbot.me")
+    axios.get("https://awardbot-demo.herokuapp.com")
         .catch(() => {
             setApiAlive(false);
         }).then(res => {
@@ -105,12 +105,12 @@ export default function Footer({ $ }) {
                                 </Link>
                             </div>
                             <div>
-                                <a href="https://api.awardbot.me/v1/invite/discord" target="_blank" className="text-white/50 hover:text-white hover:underline transform duration-200">
+                                <a href="https://awardbot-demo.herokuapp.com/v1/invite/discord" target="_blank" className="text-white/50 hover:text-white hover:underline transform duration-200">
                                     {$.footer.menus.first.items.support}
                                 </a>
                             </div>
                             <div>
-                                <a href="https://api.awardbot.me/v1/invite/bot" target="_blank" className="text-white/50 hover:text-white hover:underline transform duration-200">
+                                <a href="https://awardbot-demo.herokuapp.com/v1/invite/bot" target="_blank" className="text-white/50 hover:text-white hover:underline transform duration-200">
                                     {$.footer.menus.first.items.add}
                                 </a>
                             </div>

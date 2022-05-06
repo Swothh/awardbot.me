@@ -43,7 +43,7 @@ const MobileNavbar = ({ Menu, open, setOpen, NavItems }) => {
     </>
 }
 const Header = ({ $, NavItems }) => {
-    const { data: _user, mutate } = swr("https://api.awardbot.me/v1/auth/me");
+    const { data: _user, mutate } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
     const user = _user ? _user.data : null;
     const [open, setOpen] = useState(false);
     const [colors, setColors] = useState(false);

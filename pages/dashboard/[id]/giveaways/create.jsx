@@ -5,31 +5,31 @@ import swr from "../../../../lib/swr";
 
 export default function Create({ $ }) {
   const { id } = useRouter().query;
-  const { data: _user } = swr("https://api.awardbot.me/v1/auth/me");
+  const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
   const user = _user ? _user.data : null;
 
   const { data: _guild } = swr(
-    "https://api.awardbot.me/v1/guilds/" + id + "/check"
+    "https://awardbot-demo.herokuapp.com/v1/guilds/" + id + "/check"
   );
   const guild = _guild ? _guild.data : null;
 
   const { data: _stats } = swr(
-    "https://api.awardbot.me/v1/guilds/" + id + "/stats"
+    "https://awardbot-demo.herokuapp.com/v1/guilds/" + id + "/stats"
   );
   const stats = _stats ? _stats.data : null;
 
   const { data: _channels } = swr(
-    "https://api.awardbot.me/v1/guilds/" + id + "/channels"
+    "https://awardbot-demo.herokuapp.com/v1/guilds/" + id + "/channels"
   );
   const channels = _channels ? _channels.data : null;
 
   const { data: _roles } = swr(
-    "https://api.awardbot.me/v1/guilds/" + id + "/roles"
+    "https://awardbot-demo.herokuapp.com/v1/guilds/" + id + "/roles"
   );
   const roles = _roles ? _roles.data : null;
 
   const { data: _requirements } = swr(
-    "https://api.awardbot.me/v1/others/requireds"
+    "https://awardbot-demo.herokuapp.com/v1/others/requireds"
   );
   const requirements = _requirements ? _requirements.data : null;
 

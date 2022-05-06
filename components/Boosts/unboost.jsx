@@ -12,7 +12,7 @@ export default function Boost({ isOpen, closeModal, user, guild, boost, mutate }
     setLoading(id);
 
     const _boost = await axios.delete(
-        "https://api.awardbot.me/v1/boost/" + guild.id +
+        "https://awardbot-demo.herokuapp.com/v1/boost/" + guild.id +
         "?_token=" + (typeof window !== "undefined" ? window.localStorage.getItem("$Award_token") : "") + 
         "&b=" + id
     );

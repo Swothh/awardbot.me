@@ -8,10 +8,10 @@ import Create from "../../components/Panel/Create";
 export default function Panel() {
     const [ loading, setLoading ] = useState(false);
     const [ modal, setModal ] = useState(false);
-    const { data: _user } = swr("https://api.awardbot.me/v1/auth/me");
+    const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
 	const user = _user ? _user.data : null;
 
-    const { data: _partners, mutate } = swr("https://api.awardbot.me/v1/others/partners");
+    const { data: _partners, mutate } = swr("https://awardbot-demo.herokuapp.com/v1/others/partners");
     const partners = _partners ? _partners.data : null;
 
     const deletePartner = (id, _name) => {
@@ -33,7 +33,7 @@ export default function Panel() {
                         $.hide();
                         clearTimeout(autoCancel);
                         const _delete = await axios.post(
-                            "https://api.awardbot.me/v1/partners/delete?_token=" + 
+                            "https://awardbot-demo.herokuapp.com/v1/partners/delete?_token=" + 
                             (typeof window !== "undefined"
                             ? window.localStorage.getItem("$Award_token")
                             : ""),

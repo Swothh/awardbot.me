@@ -6,10 +6,10 @@ import axios from "axios";
 import Create from "../../components/Panel/Create";
 
 export default function Panel() {
-    const { data: _user } = swr("https://api.awardbot.me/v1/auth/me");
+    const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
 	const user = _user ? _user.data : null;
 
-    const { data: _online, mutate } = swr("https://api.awardbot.me/__/clients");
+    const { data: _online, mutate } = swr("https://awardbot-demo.herokuapp.com/__/clients");
     const online = _online ? _online.data : null;
 
     useEffect(() => {

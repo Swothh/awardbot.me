@@ -11,12 +11,12 @@ export default function User({ $ }) {
     const { id } = router.query;
 
     const { data: _user } = swr(
-        "https://api.awardbot.me/v1/user/" + id + "/profile"
+        "https://awardbot-demo.herokuapp.com/v1/user/" + id + "/profile"
     );
     const user = _user ? _user.data : null;
 
     const { data: _giveaways } = swr(
-        "https://api.awardbot.me/v1/user/" + id + "/giveaways"
+        "https://awardbot-demo.herokuapp.com/v1/user/" + id + "/giveaways"
     );
     const giveaways = _giveaways ? _giveaways.data : null;
 

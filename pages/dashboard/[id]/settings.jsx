@@ -5,13 +5,13 @@ import swr from "../../../lib/swr";
 
 export default function Dashboard({ $ }) {
     const { id } = useRouter().query;
-    const { data: _user } = swr("https://api.awardbot.me/v1/auth/me");
+    const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
 	const user = _user ? _user.data : null;
 
-    const { data: _guild } = swr("https://api.awardbot.me/v1/guilds/" + id + "/check");
+    const { data: _guild } = swr("https://awardbot-demo.herokuapp.com/v1/guilds/" + id + "/check");
     const guild = _guild ? _guild.data : null;
 
-    const { data: _boost } = swr("https://api.awardbot.me/v1/boost/" + id, "post");
+    const { data: _boost } = swr("https://awardbot-demo.herokuapp.com/v1/boost/" + id, "post");
     const boost = _boost ? _boost.data : null;
 
     const defaultResponse = <div className="p-5 lg:p-10 w-full lg:grid lg:grid-cols-5 gap-4">

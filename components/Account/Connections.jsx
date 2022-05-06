@@ -9,8 +9,8 @@ export default function Main({ $, user }) {
       userCheck: user.connections["youtube"]
         ? user.connections["youtube"]
         : null,
-      connectUrl: "https://api.awardbot.me/v1/connections/youtube/login",
-      logoutUrl: "https://api.awardbot.me/v1/connections/youtube/logout",
+      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/youtube/login",
+      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/youtube/logout",
     },
     {
       id: "github",
@@ -19,8 +19,8 @@ export default function Main({ $, user }) {
       provider: "Github",
       icon: <i className="fab fa-github text-white fa-2x mr-2" />,
       userCheck: user.connections["github"] ? user.connections["github"] : null,
-      connectUrl: "https://api.awardbot.me/v1/connections/github/login",
-      logoutUrl: "https://api.awardbot.me/v1/connections/github/logout",
+      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/github/login",
+      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/github/logout",
     },
     {
       id: "twitch",
@@ -29,8 +29,8 @@ export default function Main({ $, user }) {
       provider: "Twitch",
       icon: <i className="fab fa-twitch text-white fa-2x mr-2" />,
       userCheck: user.connections["twitch"] ? user.connections["twitch"] : null,
-      connectUrl: "https://api.awardbot.me/v1/connections/twitch/login",
-      logoutUrl: "https://api.awardbot.me/v1/connections/twitch/logout",
+      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitch/login",
+      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitch/logout",
     },
     {
       id: "twitter",
@@ -41,8 +41,8 @@ export default function Main({ $, user }) {
       userCheck: user.connections["twitter"]
         ? user.connections["twitter"]
         : null,
-      connectUrl: "https://api.awardbot.me/v1/connections/twitter/login",
-      logoutUrl: "https://api.awardbot.me/v1/connections/twitter/logout",
+      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitter/login",
+      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitter/logout",
     },
     {
       id: "tiktok",
@@ -53,8 +53,8 @@ export default function Main({ $, user }) {
       userCheck: user.connections["tiktok"]
         ? user.connections["tiktok"]
         : null,
-      connectUrl: "https://api.awardbot.me/v1/connections/tiktok/login",
-      logoutUrl: "https://api.awardbot.me/v1/connections/tiktok/logout",
+      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/tiktok/login",
+      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/tiktok/logout",
     },
       {
       id: "telegram",
@@ -65,8 +65,8 @@ export default function Main({ $, user }) {
       userCheck: user.connections["telegram"]
         ? user.connections["telegram"]
         : null,
-      connectUrl: "https://api.awardbot.me/v1/connections/telegram/login",
-      logoutUrl: "https://api.awardbot.me/v1/connections/telegram/logout",
+      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/telegram/login",
+      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/telegram/logout",
     },
   ];
   return (
