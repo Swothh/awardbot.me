@@ -38,7 +38,7 @@ module.exports = {
                 }
             },
         },
-        developedWith: 'Developed with ❤️ by Serity.',
+        developedWith: 'Developed with ❤️ by clqu & Swôth.',
         allServices: 'All services are online.',
         someServices: 'Some services are down.'
     },
