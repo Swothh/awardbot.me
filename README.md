@@ -1,5 +1,14 @@
 # AwardBot - A open-source giveaway bot.<br/>
 
+## Terms of Use
+<a>- You have the permission to shoot and share videos, but you have to mention us and our server in the video.</a><br>
+<a>- You cannot use our branding anywhere on your site & claim it as your own.</a><br>
+<a>- You have the permission to share in writing, but you have to mention us, our server, in the article.</a><br>
+<a>- You can't speak in a "we did it" way.</a><br>
+<a>- You cannot sell this.</a><br>
+<a>- Don't touch this part on footer;</a><br>
+<img width="512" src="https://i.imgur.com/PfaD0UI.png"><br><br>
+
 ## Developers
 <table>
    <tr>
