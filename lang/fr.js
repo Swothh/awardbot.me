@@ -39,7 +39,7 @@ module.exports = {
         },
       },
     },
-    developedWith: "Développé avec ❤️ par Serity.",
+    developedWith: "Développé avec ❤️ par clqu & Swôth.",
     allServices: "Tous les services sont en ligne.",
     someServices: "Certains services sont en panne.",
   },
