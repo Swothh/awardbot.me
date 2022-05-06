@@ -162,11 +162,20 @@ export default function Footer({ $ }) {
                                 </p>
                             </a>}
                         </div>
+
+                        {/* 
+                            --------------------------
+                                DONT TOUCH HERE!
+                            --------------------------
+                        */}
                         <p dangerouslySetInnerHTML={{ 
                             __html: $.footer.developedWith
-                        }} className="text-white text-center sm:text-right text-opacity-50">
-                            
-                        </p>
+                        }} className="text-white text-center sm:text-right text-opacity-50" />
+                        {/* 
+                            --------------------------
+                                DONT TOUCH HERE!
+                            --------------------------
+                        */}
                     </div>
                 </div>
             </footer>
