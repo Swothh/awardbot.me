@@ -9,8 +9,8 @@ export default function Main({ $, user }) {
       userCheck: user.connections["youtube"]
         ? user.connections["youtube"]
         : null,
-      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/youtube/login",
-      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/youtube/logout",
+      connectUrl: "https://award-demo.clquu.repl.co/v1/connections/youtube/login",
+      logoutUrl: "https://award-demo.clquu.repl.co/v1/connections/youtube/logout",
     },
     {
       id: "github",
@@ -19,8 +19,8 @@ export default function Main({ $, user }) {
       provider: "Github",
       icon: <i className="fab fa-github text-white fa-2x mr-2" />,
       userCheck: user.connections["github"] ? user.connections["github"] : null,
-      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/github/login",
-      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/github/logout",
+      connectUrl: "https://award-demo.clquu.repl.co/v1/connections/github/login",
+      logoutUrl: "https://award-demo.clquu.repl.co/v1/connections/github/logout",
     },
     {
       id: "twitch",
@@ -29,8 +29,8 @@ export default function Main({ $, user }) {
       provider: "Twitch",
       icon: <i className="fab fa-twitch text-white fa-2x mr-2" />,
       userCheck: user.connections["twitch"] ? user.connections["twitch"] : null,
-      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitch/login",
-      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitch/logout",
+      connectUrl: "https://award-demo.clquu.repl.co/v1/connections/twitch/login",
+      logoutUrl: "https://award-demo.clquu.repl.co/v1/connections/twitch/logout",
     },
     {
       id: "twitter",
@@ -41,8 +41,8 @@ export default function Main({ $, user }) {
       userCheck: user.connections["twitter"]
         ? user.connections["twitter"]
         : null,
-      connectUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitter/login",
-      logoutUrl: "https://awardbot-demo.herokuapp.com/v1/connections/twitter/logout",
+      connectUrl: "https://award-demo.clquu.repl.co/v1/connections/twitter/login",
+      logoutUrl: "https://award-demo.clquu.repl.co/v1/connections/twitter/logout",
     }
   ];
   return (

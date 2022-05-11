@@ -1,7 +1,7 @@
 import swr from "../lib/swr";
 
 export default function Team({ $ }) {
-    const { data: _team } = swr("https://awardbot-demo.herokuapp.com/v1/others/team");
+    const { data: _team } = swr("https://award-demo.clquu.repl.co/v1/others/team");
     const team = _team ? _team.data : null;
 
     return (

@@ -25,7 +25,7 @@ const DefaultResponse = () => {
 
 export default function Overview({ $ }) {
   const { id } = useRouter().query;
-  const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
+  const { data: _user } = swr("https://award-demo.clquu.repl.co/v1/auth/me");
   const user = _user ? _user.data : null;
   const [pin, setPin] = useState('');
   const [pinEntered, setPinEntered] = useState('');
@@ -48,7 +48,7 @@ export default function Overview({ $ }) {
   };
 
   const { data: _overview } = swr(
-    "https://awardbot-demo.herokuapp.com/v1/giveaway/" + id + "/overview"
+    "https://award-demo.clquu.repl.co/v1/giveaway/" + id + "/overview"
   );
   const overview = _overview ? _overview.data : null;
   const handleOnChange = async (res) => {
@@ -62,7 +62,7 @@ export default function Overview({ $ }) {
         setTimeout(async() => {
           try {
             const _request = await axios.post(
-              "https://awardbot-demo.herokuapp.com/v1/giveaway/" +
+              "https://award-demo.clquu.repl.co/v1/giveaway/" +
               overview.id +
               "/check/pin?q="+pin+"&_token=" +
               window?.localStorage?.getItem("$Award_token")
@@ -95,7 +95,7 @@ export default function Overview({ $ }) {
           message: "This giveaway has been finished.",
         }).show();
       const _request = await axios.post(
-        "https://awardbot-demo.herokuapp.com/v1/giveaway/" +
+        "https://award-demo.clquu.repl.co/v1/giveaway/" +
         giveaway.id +
         "/join?pin="+pin+"&_token=" +
         window?.localStorage?.getItem("$Award_token")

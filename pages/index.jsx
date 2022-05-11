@@ -27,7 +27,7 @@ export default function Index({ $token, $url, $ }) {
   }
 	const addBot = () => {
 		let $w = window.open(
-			"https://awardbot-demo.herokuapp.com/v1/invite/bot?__w=1&__beta=" + 
+			"https://award-demo.clquu.repl.co/v1/invite/bot?__w=1&__beta=" + 
 			(process.env.NODE_ENV === 'production' ? 'false' : 'true'),
 			"_blank",
 			"toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=400,height=1400"
@@ -36,13 +36,13 @@ export default function Index({ $token, $url, $ }) {
 		let $i = setInterval(async () => {
 			if (!$w.closed) return;
 			const push = () => router.push("/dashboard/added");
-			const check = await axios.get("https://awardbot-demo.herokuapp.com/v1/auth/me?_token=" + window?.localStorage?.getItem("$Award_token"));
+			const check = await axios.get("https://award-demo.clquu.repl.co/v1/auth/me?_token=" + window?.localStorage?.getItem("$Award_token"));
 			clearInterval($i);
 		}, 1000);
 	};
-  const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
+  const { data: _user } = swr("https://award-demo.clquu.repl.co/v1/auth/me");
   const user = _user ? _user.data : null;
-  const { data: _stats } = swr("https://awardbot-demo.herokuapp.com/v1/others/stats");
+  const { data: _stats } = swr("https://award-demo.clquu.repl.co/v1/others/stats");
   const stats = _stats ? _stats.data : null;
   const Loading = () => <i className="fa fa-spinner-third fa-spin text-white" />;
   const statsArray = [
@@ -93,7 +93,7 @@ export default function Index({ $token, $url, $ }) {
           <a
 
             className="font-medium md:ml-5 text-white hover:underline"
-            href="https://awardbot-demo.herokuapp.com/v1/invite/discord"
+            href="https://award-demo.clquu.repl.co/v1/invite/discord"
             target="_blank"
           >
             {$.index.buttons.support}

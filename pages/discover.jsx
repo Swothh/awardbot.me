@@ -232,7 +232,7 @@ const Browse = ({ $, searchQuery }) => {
     setSort(sorts.find((a) => a.value === sort).value);
   };
 
-  const { data: _giveaways } = swr("https://awardbot-demo.herokuapp.com/v1/giveaway/search");
+  const { data: _giveaways } = swr("https://award-demo.clquu.repl.co/v1/giveaway/search");
   const giveaways = _giveaways ? _giveaways.data : null;
 
   useEffect(() => {

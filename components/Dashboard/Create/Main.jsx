@@ -132,7 +132,7 @@ export default function Main({
     if (loading) return;
     setLoading(true);
     const _create = await axios.post(
-        "https://awardbot-demo.herokuapp.com/v1/giveaway/create?_token=" +
+        "https://award-demo.clquu.repl.co/v1/giveaway/create?_token=" +
         (typeof window !== "undefined"
           ? window.localStorage.getItem("$Award_token")
           : ""),

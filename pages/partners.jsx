@@ -1,7 +1,7 @@
 import swr from "../lib/swr";
 
 export default function Partners() {
-    const { data: _partners } = swr("https://awardbot-demo.herokuapp.com/v1/others/partners");
+    const { data: _partners } = swr("https://award-demo.clquu.repl.co/v1/others/partners");
     const partners = _partners ? _partners.data : null;
 
     return (

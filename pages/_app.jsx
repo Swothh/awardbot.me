@@ -104,14 +104,14 @@ export default function AwardApp({ Component, pageProps }) {
       name: locale.navbar.support,
       icon: "fab fa-discord",
       activeIcon: "fab fa-discord",
-      href: "https://awardbot-demo.herokuapp.com/v1/invite/discord",
+      href: "https://award-demo.clquu.repl.co/v1/invite/discord",
     },
     {
       link: false,
       name: locale.navbar.invite,
       icon: "fal fa-robot",
       activeIcon: "fab fa-robot",
-      href: "https://awardbot-demo.herokuapp.com/v1/invite/bot",
+      href: "https://award-demo.clquu.repl.co/v1/invite/bot",
     },
     {
       link: true,

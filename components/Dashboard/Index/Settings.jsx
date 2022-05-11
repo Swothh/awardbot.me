@@ -42,14 +42,14 @@ export default function Main({ $, boost, guild }) {
     const [ l_enabled, set_l_enabled ] = useState(guild?._settings?.log?.enabled || false);
     const [ l_channel, set_l_channel ] = useState(false);
 
-    const { data: _channels } = swr("https://awardbot-demo.herokuapp.com/v1/guilds/" + (guild?.id || "#") + "/channels");
+    const { data: _channels } = swr("https://award-demo.clquu.repl.co/v1/guilds/" + (guild?.id || "#") + "/channels");
     const channels = _channels ? _channels.data : null;
 
     const saveLog = async () => {
         if (l_loading) return;
         set_l_loading(true);
 
-        const _save = await axios.post("https://awardbot-demo.herokuapp.com/v1/guilds/" + (guild?.id || "#") + "/settings?_token=" + 
+        const _save = await axios.post("https://award-demo.clquu.repl.co/v1/guilds/" + (guild?.id || "#") + "/settings?_token=" + 
             (typeof window !== "undefined"
             ? window.localStorage.getItem("$Award_token")
             : ""), 

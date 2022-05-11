@@ -16,7 +16,7 @@ export default function Create({ isOpen, closeModal, mutateList }) {
         setLoading(true);
         
         const _add = await axios.post(
-            "https://awardbot-demo.herokuapp.com/v1/partners/add?_token=" + 
+            "https://award-demo.clquu.repl.co/v1/partners/add?_token=" + 
             (typeof window !== "undefined"
             ? window.localStorage.getItem("$Award_token")
             : ""),

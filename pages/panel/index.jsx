@@ -2,10 +2,10 @@ import swr from "../../lib/swr";
 import Nav from "../../components/Panel/Nav";
 
 export default function Panel() {
-    const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
+    const { data: _user } = swr("https://award-demo.clquu.repl.co/v1/auth/me");
 	const user = _user ? _user.data : null;
 
-    const { data: _partners, mutate } = swr("https://awardbot-demo.herokuapp.com/v1/others/partners");
+    const { data: _partners, mutate } = swr("https://award-demo.clquu.repl.co/v1/others/partners");
     const partners = _partners ? _partners.data : null;
 
     return (

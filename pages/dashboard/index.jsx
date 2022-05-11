@@ -4,7 +4,7 @@ import swr from "../../lib/swr";
 import axios from "axios";
 
 export default function Dashboard({ $ }) {
-	const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
+	const { data: _user } = swr("https://award-demo.clquu.repl.co/v1/auth/me");
 	const user = _user ? _user.data : null;
 	const router = useRouter();
 
@@ -17,7 +17,7 @@ export default function Dashboard({ $ }) {
 
 	const addBot = id => {
 		let $w = window.open(
-			"https://awardbot-demo.herokuapp.com/v1/invite/bot?__w=1&__beta=" + 
+			"https://award-demo.clquu.repl.co/v1/invite/bot?__w=1&__beta=" + 
 			(process.env.NODE_ENV === 'production' ? 'false' : 'true') + 
 			"&disable_select=true&id=" + id,
 			"_blank",
@@ -27,7 +27,7 @@ export default function Dashboard({ $ }) {
 		let $i = setInterval(async () => {
 			if (!$w.closed) return;
 			const push = () => router.push("/dashboard/" + id);
-			const check = await axios.get("https://awardbot-demo.herokuapp.com/v1/auth/me?_token=" + window?.localStorage?.getItem("$Award_token"));
+			const check = await axios.get("https://award-demo.clquu.repl.co/v1/auth/me?_token=" + window?.localStorage?.getItem("$Award_token"));
 			clearInterval($i);
 
 			if (check && check.data && check.data.data) {

@@ -3,10 +3,10 @@ import Nav from "../../components/Panel/Nav";
 import Create from "../../components/Panel/Create";
 
 export default function Panel() {
-    const { data: _user } = swr("https://awardbot-demo.herokuapp.com/v1/auth/me");
+    const { data: _user } = swr("https://award-demo.clquu.repl.co/v1/auth/me");
 	const user = _user ? _user.data : null;
 
-    const { data: _partners, mutate } = swr("https://awardbot-demo.herokuapp.com/v1/others/partners");
+    const { data: _partners, mutate } = swr("https://award-demo.clquu.repl.co/v1/others/partners");
     const partners = _partners ? _partners.data : null;
 
     return (

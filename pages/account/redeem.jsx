@@ -16,7 +16,7 @@ export default function Redeem({ $ }) {
     setLoading(true);
     axios
       .get(
-        "https://awardbot-demo.herokuapp.com/v1/code/use?c=" +
+        "https://award-demo.clquu.repl.co/v1/code/use?c=" +
           code +
           "&_token=" +
           window?.localStorage?.getItem("$Award_token")
@@ -72,7 +72,7 @@ export default function Redeem({ $ }) {
           </>}
         </button>
         <a
-          href="https://awardbot-demo.herokuapp.com/v1/invite/discord"
+          href="https://award-demo.clquu.repl.co/v1/invite/discord"
           className="text-opacity-75 text-white hover:underline"
         >
           {$.user.redeem.didntWork}
