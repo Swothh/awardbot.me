@@ -17,11 +17,6 @@
         <br />
         <sub><b>Swoth</b></sub></a><br />
      </td>
-      <td align="center"><a href="https://github.com/clqu">
-        <img src="https://github.com/clqu.png?size=100" width="100px;" alt=""/>
-        <br />
-        <sub><b>clqu</b></sub></a><br />
-     </td>
    </tr>
 </table>
 
