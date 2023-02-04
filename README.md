@@ -1,4 +1,4 @@
-# AwardBot - A open-source giveaway bot.<br/>
+# AwardBot - A open-source giveaway bot. ⭐<br/>
 
 ## Terms of Use
 <a>- You have the permission to shoot and share videos, but you have to mention us and our server in the video.</a><br>
