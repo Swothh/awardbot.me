@@ -9,17 +9,6 @@
 <a>- Don't touch this part on footer;</a><br>
 <img width="512" src="https://i.imgur.com/PfaD0UI.png"><br><br>
 
-## Developers
-<table>
-   <tr>
-      <td align="center"><a href="https://github.com/swothh">
-        <img src="https://github.com/swothh.png?size=100" width="100px;" alt=""/>
-        <br />
-        <sub><b>Swoth</b></sub></a><br />
-     </td>
-   </tr>
-</table>
-
 ## 🛠 Run Server
 
 #### Development Server
